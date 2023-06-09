@@ -1,0 +1,58 @@
+﻿@model MarocTarl.Models.StudentExam
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StudentExam</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EtabFonctionnaire.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EtabFonctionnaire.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Exam.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Exam.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GroupeClasseStudent.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GroupeClasseStudent.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAdd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAdd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeExam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeExam)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

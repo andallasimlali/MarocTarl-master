@@ -1,0 +1,15 @@
+﻿
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.dropdown-menu.dropdown-menu-end.pt-0.show {
+    text-align: right;
+}
+
+.form-floating > label {
+    transform-origin: right !important;
+}

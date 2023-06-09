@@ -1,0 +1,50 @@
+﻿@model MarocTarl.Models.Reponse
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reponse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Choice.Text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Choice.Text)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentExam.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentExam.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsCorrect)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsCorrect)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAdd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAdd)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
